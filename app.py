@@ -1,10 +1,10 @@
 import streamlit as st
-from predict_page import predict_page_show
+from predict_page import show_predict_page
 
 page = st.sidebar.selectbox("Loan Prediction", ("Get Started", "Nothanks"))
 
 if page == "Get Started":
-    predict_page_show()
+    show_predict_page()
 else:
     qoutes = "Thanks for visiting our page..."
     st.success(qoutes)
